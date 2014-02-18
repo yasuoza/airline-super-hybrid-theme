@@ -5,7 +5,7 @@ let g:airline#themes#super_hybrid#palette = {}
 
 function! airline#themes#super_hybrid#refresh()
     let s:N1 = airline#themes#get_highlight('DiffAdd')
-    let s:N2 = airline#themes#get_highlight('CursorLine')
+    let s:N2 = airline#themes#get_highlight('CursorColumn')
     let s:N3 = airline#themes#get_highlight2(['Text', 'fg'], ['StatusLineNC', 'bg'], 'bold')
     let g:airline#themes#super_hybrid#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 
