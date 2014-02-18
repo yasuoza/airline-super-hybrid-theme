@@ -30,11 +30,11 @@ let g:airline_theme='super_hybrid'
 
 ## LICENSE
 
-* [vim-airline](https://github.com/bling/vim-airline)
-MIT License. Copyright (c) 2013-2014 Bailey Ling.
+* [vim-airline](https://github.com/bling/vim-airline)  
+  MIT License. Copyright (c) 2013-2014 Bailey Ling.
 
 * [vim-hybrid](https://github.com/w0ng/vim-hybrid/)
 
-* airline-super-hybrid-theme
-MIT License. Copyright (c) 2014 Yasuharu Ozaki
+* airline-super-hybrid-theme  
+  MIT License. Copyright (c) 2014 Yasuharu Ozaki
 
