@@ -6,21 +6,21 @@ let g:airline#themes#super_hybrid#palette = {}
 function! airline#themes#super_hybrid#refresh()
     let s:N1 = airline#themes#get_highlight('DiffAdd')
     let s:N2 = airline#themes#get_highlight('CursorColumn')
-    let s:N3 = airline#themes#get_highlight2(['Text', 'fg'], ['StatusLineNC', 'bg'], 'bold')
+    let s:N3 = airline#themes#get_highlight2(['Text', 'fg'], ['StatusLineNC', 'bg'])
     let g:airline#themes#super_hybrid#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 
-    let modified_group = airline#themes#get_highlight2(['Text', 'fg'], ['SpellRare', 'bg'], 'bold')
+    let modified_group = airline#themes#get_highlight2(['Text', 'fg'], ['SpellRare', 'bg'])
     let g:airline#themes#super_hybrid#palette.normal_modified = {
-                \ 'airline_c': airline#themes#get_highlight2(['Text', 'fg'], ['DiffChange', 'bg'], 'bold')
+                \ 'airline_c': airline#themes#get_highlight2(['Text', 'fg'], ['DiffChange', 'bg'])
                 \ }
 
     let warning_group = airline#themes#get_highlight('SpellRare')
     let g:airline#themes#super_hybrid#palette.normal.airline_warning = warning_group
     let g:airline#themes#super_hybrid#palette.normal_modified.airline_warning = warning_group
 
-    let s:I1 = airline#themes#get_highlight2(['Text', 'fg'], ['Visual', 'bg'], 'bold')
-    let s:I2 = airline#themes#get_highlight2(['Text', 'fg'], ['SpellLocal', 'bg'], 'bold')
-    let s:I3 = airline#themes#get_highlight2(['Text', 'fg'], ['DiffText', 'bg'], 'bold')
+    let s:I1 = airline#themes#get_highlight2(['Text', 'fg'], ['Visual', 'bg'])
+    let s:I2 = airline#themes#get_highlight2(['Text', 'fg'], ['SpellLocal', 'bg'])
+    let s:I3 = airline#themes#get_highlight2(['Text', 'fg'], ['DiffText', 'bg'])
     let g:airline#themes#super_hybrid#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
     let g:airline#themes#super_hybrid#palette.insert_modified = g:airline#themes#super_hybrid#palette.normal_modified
     let g:airline#themes#super_hybrid#palette.insert.airline_warning = g:airline#themes#super_hybrid#palette.normal.airline_warning
@@ -35,9 +35,9 @@ function! airline#themes#super_hybrid#refresh()
     let g:airline#themes#super_hybrid#palette.replace.airline_warning = g:airline#themes#super_hybrid#palette.normal.airline_warning
     let g:airline#themes#super_hybrid#palette.replace_modified.airline_warning = g:airline#themes#super_hybrid#palette.replace_modified.airline_warning
 
-    let s:V1 = airline#themes#get_highlight2(['Text', 'fg'], ['Folded', 'bg'], 'bold')
-    let s:V2 = airline#themes#get_highlight2(['Text', 'fg'], ['Error', 'bg'], 'bold')
-    let s:V3 = airline#themes#get_highlight2(['Text', 'fg'], ['DiffDelete', 'bg'], 'bold')
+    let s:V1 = airline#themes#get_highlight2(['Text', 'fg'], ['Folded', 'bg'])
+    let s:V2 = airline#themes#get_highlight2(['Text', 'fg'], ['Error', 'bg'])
+    let s:V3 = airline#themes#get_highlight2(['Text', 'fg'], ['DiffDelete', 'bg'])
     let g:airline#themes#super_hybrid#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
     let g:airline#themes#super_hybrid#palette.visual_modified = g:airline#themes#super_hybrid#palette.normal_modified
     let g:airline#themes#super_hybrid#palette.visual.airline_warning = g:airline#themes#super_hybrid#palette.normal.airline_warning
