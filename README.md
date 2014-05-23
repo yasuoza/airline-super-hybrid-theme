@@ -1,4 +1,4 @@
-# airline-super-hybrid-theme
+# vim-airline-super-hybrid-theme
 
 This repository demonstrates that you can use custom [vim-airline](https://github.com/bling/vim-airline) theme.
 
